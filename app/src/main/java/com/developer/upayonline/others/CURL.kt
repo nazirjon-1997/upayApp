@@ -1,7 +1,7 @@
 package com.developer.upayonline.others
 
 object CURL {
-    val SERVER = "http://217.11.188.98:1010/"
+    val SERVER = "http://217.11/"
     val AUTHO = "/api/auth/login"
     val PHONE = "/api/wallet/get-sms"
     val REGISTRATION = "/api/wallet/register"
