@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:key="profil"
+        android:icon="@drawable/ic_round_account"
+        android:summary="Изменить профиль "
+        android:title="Профиль">
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="out"
+        android:icon="@drawable/ic_round_exit_to_app"
+        android:summary="Выход из приложение"
+        android:title="Выйти">
+    </PreferenceScreen>
+</PreferenceScreen>

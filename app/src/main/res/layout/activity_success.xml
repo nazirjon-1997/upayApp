@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back_color"
+    tools:context=".SuccessActivity">
+    <include layout="@layout/icon_toolbar"/>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_marginTop="@dimen/top_margin"
+        android:layout_below="@+id/my_toolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/img_success"
+            android:src="@drawable/check"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/success"
+            android:text="Платеж успешно проведён"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        android:layout_below="@+id/linear"
+        android:layout_marginTop="@dimen/top_margin"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/rigth_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp" >
+                <TextView
+                    android:id="@+id/res_success"
+                    android:text="Название"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/service_name"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimary"
+                    android:text="МегаФон Таджикистан"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row2"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp" >
+                <TextView
+                    android:id="@+id/number1"
+                    android:text="Номер"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/account"
+                    android:layout_weight="0.5"
+                    android:text="+992 907 70 05 00"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorHeader"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:id="@+id/row3"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp" >
+                <TextView
+                    android:id="@+id/sum1"
+                    android:text="Введенная сумма"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/input_money"
+                    android:textColor="@color/colorPrimary"
+                    android:text="100 сомони"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row4"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp" >
+                <TextView
+                    android:id="@+id/comText"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Комиссия — 0%"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/commission"
+                    android:text="0 сомони"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="right"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row5"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp" >
+                <TextView
+                    android:id="@+id/send"
+                    android:text="Сумма к зачислению"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/sum_send"
+                    android:text="100 сомони"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="right"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/gotoMain"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/btn_shape_round"
+        android:text="Закрыть"
+        android:layout_marginRight="@dimen/rigth_margin"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

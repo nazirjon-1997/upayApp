@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:gravity="center"
+    android:background="@color/back_color"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/log"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:layout_width="match_parent"
+        android:layout_height="90dp" />
+    <!--    <TextView-->
+    <!--        android:text="@string/app_name"-->
+    <!--        android:gravity="center"-->
+    <!--        android:layout_below="@id/logo"-->
+    <!--        android:textStyle="italic|bold"-->
+    <!--        android:textSize="30sp"-->
+    <!--        android:textColor="@color/colorPrimary"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content" />-->
+
+    <TextView
+        android:text="Регистрация"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:layout_marginTop="@dimen/top_margin"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<!--    <com.mukesh.OtpView-->
+<!--        android:id="@+id/code"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:inputType="number"-->
+<!--        android:textColor="@color/colorPrimary"-->
+<!--        app:hideLineWhenFilled="true"-->
+<!--        app:itemCount="4"-->
+<!--        app:itemSpacing="6dp"-->
+<!--        app:lineColor="@color/colorPrimary"-->
+<!--        app:state_filled="true"-->
+<!--        app:viewType="line" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/fullname"
+            android:hint="Фамилия и имя"
+            android:textColor="@color/colorPrimary"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/password"
+            android:hint="Пароль"
+            android:textColor="@color/colorPrimary"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/c_password"
+            android:hint="Подтвердите пароль"
+            android:textColor="@color/colorPrimary"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:textColor="@color/white"
+        android:text="Register"
+        android:id="@+id/btn_regist"
+        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/btn_shape_round"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

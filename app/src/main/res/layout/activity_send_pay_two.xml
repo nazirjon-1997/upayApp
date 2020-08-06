@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    android:orientation="vertical"
+    tools:context=".SendPayActivity">
+    <include layout="@layout/icon_toolbar"/>
+    <RelativeLayout
+        android:paddingLeft="@dimen/left_margin"
+        android:paddingRight="@dimen/rigth_margin"
+        android:paddingTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_gravity="center"
+                android:background="@color/back_color"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/icon_service"
+                    android:src="@drawable/tcell"
+                    android:layout_width="80dp"
+                    android:layout_height="64dp"/>
+                <TextView
+                    android:id="@+id/name_service"
+                    android:text="Tcell"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/icon_operation"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_phone" />
+                        <EditText
+                            android:id="@+id/phone_number"
+                            android:enabled="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Введите номер телефона"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/icon_summa"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_money" />
+                        <EditText
+                            android:id="@+id/input_money"
+                            android:hint="Введите деньги"
+                            android:textColor="@color/colorText"
+                            android:inputType="numberDecimal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="@dimen/top_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/rowLabel"
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp" >
+                        <TextView
+                            android:id="@+id/label"
+                            android:text="Инфо :"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"/>
+                        <TextView
+                            android:id="@+id/label_text"
+                            android:textColor="@color/colorPrimary"
+                            android:text=""
+                            android:layout_weight="0.5"
+                            android:gravity="right"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="@dimen/top_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/row1"
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp" >
+                        <TextView
+                            android:id="@+id/sum1"
+                            android:text="Всего :"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"/>
+                        <TextView
+                            android:id="@+id/all_money"
+                            android:textColor="@color/colorPrimary"
+                            android:text="0.00 сомони"
+                            android:layout_weight="0.5"
+                            android:gravity="right"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/row2"
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp" >
+                        <TextView
+                            android:id="@+id/comText"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Комиссия :"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"/>
+                        <TextView
+                            android:id="@+id/commission"
+                            android:text="0.00 сомони"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="right"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linPay"
+            android:padding="5dp"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/btn_shape_round"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btnSetting"
+                android:layout_marginRight="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_wallet" />
+
+            <TextView
+                android:id="@+id/tvSetting"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Оплатить" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

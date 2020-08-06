@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">UPay</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_payment">Платежи</string>
+    <string name="title_home">Главная</string>
+    <string name="title_dashboard">История</string>
+    <string name="title_setting">Настройки</string>
+    <string name="title_activity_bottom_nav">MainActivity</string>
+
+    <string name="cancel_pf">Отмена</string>
+    <string name="use_pin_pf">Используйте пин-код</string>
+    <string name="sign_in_pf">Войти в систему</string>
+    <string name="ok_pf">OK</string>
+    <string name="next_pf">Далее</string>
+    <string name="forgot_pf">Забыли?</string>
+    <string name="lock_screen_title_pf">Введите пин-код или используйте отпечаток пальца</string>
+    <string name="settings_pf">Настройки</string>
+    <string name="no_fingerprints_message_pf">Отпечатки пальцев не найдены. Пожалуйста, добавьте отпечатки пальцев в настройках, если вы хотите использовать этот метод авторизации."</string>
+    <string name="no_fingerprints_title_pf">"Отпечатки пальцев не найдены"</string>
+
+    <string name="fingerprint_not_recognized_pf">Отпечаток пальца не распознан. Попробуй еще раз</string>
+    <string name="fingerprint_success_pf">Отпечаток пальца распознан</string>
+    <string name="fingerprint_description_pf">Подтвердите отпечаток пальца, чтобы продолжить</string>
+    <string name="fingerprint_hint_pf">Сенсорный датчик</string>
+    <string name="description_fingerprint_icon_pf">Значок отпечатков пальцев</string>
+</resources>

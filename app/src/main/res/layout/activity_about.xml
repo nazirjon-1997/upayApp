@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back_color"
+    tools:context=".AboutActivity">
+
+    <include layout="@layout/icon_toolbar"/>
+    <androidx.core.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/colorPrimary"
+                    android:text="OOO UPAY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="UPay - это удобный платежный сервис,
+        позволяющий с помощью терминалов самообслуживания оплачивать мобильную связь
+         и совершать другие регулярные платежи.
+
+Деятельность компании uPay сосредоточена на внедрении программно-аппаратных решений,
+ обеспечивающих взаиморасчеты между поставщиками услуг и их клиентами.
+ Компания была основана группой опытных специалистов, успешно реализовавших
+  аналогичные проекты в Таджикистан и в странах СНГ. Опыт работы с электронными платежами,
+  накопленный в процессе запуска и эксплуатации платежных сетей в этих странах, позволил
+  команде UPay выйти на международный уровень и предложить новую услугу в ОАЭ.
+
+Безопасность и надежность операций, проведенных через сервис UPay, обеспечивается
+системой защиты данных и высококачественным оборудованием, установленным в крупнейших
+дата-центрах ОАЭ."
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

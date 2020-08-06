@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/back_color"
+    android:layout_height="match_parent">
+    <include layout="@layout/icon_toolbar"/>
+    <LinearLayout
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageAdmin"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_user"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Фамилия и имя"
+                    android:imeActionId="@+id/login"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    tools:ignore="InvalidImeActionId" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+                <EditText
+                    android:id="@+id/password"
+                    android:hint="Новый пароль"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+                <EditText
+                    android:id="@+id/c_password"
+                    android:hint="Подтвердите новый пароль"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/saveUser"
+            android:text="Сохранить"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/btn_shape_round"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

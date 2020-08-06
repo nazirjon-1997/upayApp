@@ -1,0 +1,146 @@
+{
+"Cat1s": [
+    {
+      "LangKey": "tj",
+      "Value": "АЛОҚАИ МОБИЛӢ"
+    },
+    {
+      "LangKey": "ru",
+      "Value": "МОБИЛЬНАЯ СВЯЗЬ"
+    },
+    {
+      "LangKey": "eng",
+      "Value": "MOBILE COMUNICATION"
+    },
+    {
+      "LangKey": "uz",
+      "Value": "UYALI ALOQA"
+    }
+  ],
+  "Cat2s": [
+    {
+      "LangKey": "tj",
+      "Value": "ШАБАКАҲОИ ХОРИӋА"
+    },
+    {
+      "LangKey": "ru",
+      "Value": "ИНОСТРАННЫЕ ОПЕРАТОРЫ"
+    },
+    {
+      "LangKey": "eng",
+      "Value": "FOREIGN MOBILES"
+    },
+    {
+      "LangKey": "uz",
+      "Value": "HORIJ MOBILLARI"
+    }
+  ],
+  "Cat3s": [
+    {
+      "LangKey": "tj",
+      "Value": "ИНТЕРНЕТ ВА ТВ ПРОВАЙДЕРҲО"
+    },
+    {
+      "LangKey": "ru",
+      "Value": "ИНТЕРНЕТ И ТВ ПРОВАЙДЕРЫ"
+    },
+    {
+      "LangKey": "eng",
+      "Value": "INTERNET & TV PROVIDERS"
+    },
+    {
+      "LangKey": "uz",
+      "Value": "INTERNET VA TV HIZMATI"
+    }
+  ],
+  "Cat4s": [
+    {
+      "LangKey": "tj",
+      "Value": "ХИЗМАТРАСОНИҲОИ КОММУНАЛӢ"
+    },
+    {
+      "LangKey": "ru",
+      "Value": "КОММУНАЛЬНЫЕ УСЛУГИ"
+    },
+    {
+      "LangKey": "eng",
+      "Value": "COMUNNAL SERVICE"
+    },
+    {
+      "LangKey": "uz",
+      "Value": "COMUNAL HIZMATLARI"
+    }
+  ],
+  "Cat5s": [
+    {
+      "LangKey": "tj",
+      "Value": "ХИЗМАТРАСОНИҲОИ БОНКИ"
+    },
+    {
+      "LangKey": "ru",
+      "Value": "БАНКОВСКИЕ УСЛУГИ"
+    },
+    {
+      "LangKey": "eng",
+      "Value": "BANKING SERVICE"
+    },
+    {
+      "LangKey": "uz",
+      "Value": "BANK HIZMATI"
+    }
+  ],
+  "Cat6s": [
+    {
+      "LangKey": "tj",
+      "Value": "ШАБАКАҲОИ ИӋТИМОӢ"
+    },
+    {
+      "LangKey": "ru",
+      "Value": "СОЦИАЛЬНЫЕ СЕТИ И ОНЛАЙН ИГРЫ"
+    },
+    {
+      "LangKey": "eng",
+      "Value": "SOCIAL NETWORKS END ONLINE GAMES"
+    },
+    {
+      "LangKey": "uz",
+      "Value": "SICIAL MESENGERLAR"
+    }
+  ],
+  "Cat7s": [
+    {
+      "LangKey": "tj",
+      "Value": "ХАМЁНИ ЭЛЕКТРОНИ"
+    },
+    {
+      "LangKey": "ru",
+      "Value": "ЭЛЕКТРОННЫЙ КОШЕЛЕК"
+    },
+    {
+      "LangKey": "eng",
+      "Value": "ELECTRON WALLETS"
+    },
+    {
+      "LangKey": "uz",
+      "Value": "ELEKTRON HAMYON"
+    }
+  ],
+  "Cat8s": [
+    {
+      "LangKey": "tj",
+      "Value": "ХИЗМАТРАСОНИҲОИ ИЛОВАГӢ"
+    },
+    {
+      "LangKey": "ru",
+      "Value": "ДРУГИЕ УСЛУГИ"
+    },
+    {
+      "LangKey": "eng",
+      "Value": "OTHER SERVICES"
+    },
+    {
+      "LangKey": "uz",
+      "Value": "BOSHQA HIZMATLAR"
+    }
+  ]
+}
